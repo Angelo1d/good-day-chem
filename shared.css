@@ -9,6 +9,7 @@ body {
 
 header {
     background: #50B948;
+    width: 100%;
 }
 
 .header {
@@ -120,9 +121,9 @@ header {
 }
 
 .basket {
+    justify-content: space-between;
     width: 130px;
     height: 50px;
-
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -179,7 +180,7 @@ input:focus {
     padding: 0;
     left:0;
     text-align: left;
-    min-width: 160px;
+    min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
     z-index: 1;
     background: #ddd;
@@ -235,4 +236,15 @@ input:focus {
     border-radius: 10px 10px 0 0;
 }
 
+.arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    margin-bottom: 2px;
+}
 
+.arrow-bottom {
+    transform: rotate(135deg);
+}
