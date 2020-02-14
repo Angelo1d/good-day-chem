@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аптека Доброго Дня</title>
-    <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="../css/category.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -146,145 +146,58 @@
             </section>
         </section>
     </header>
+
     <main>
-        <section class="content-breaker">
-            <h1>Вигідні пропозиції сезону</h1>
+        <section class="category-filter">
+            <form action="" class="categories-filter__items">
+                <div class="categories-filter__item">
+                    <label for="imunoglobulins">Імуноглобуліни</label>
+                    <input type="checkbox" id="imunoglobulins" name="imunoglobulins">
+                </div>
+                <div class="categories-filter__item">
+                    <label for="heals">Аптечки медичні</label>
+                    <input type="checkbox" id="heals" name="heals">
+                </div>
+                <div class="categories-filter__item">
+                    <label for="breath-system">Дихальна система</label>
+                    <input type="checkbox" id="breath-system" name="breath-system">
+                </div>
+                <div class="categories-filter__item">
+                    <label for="for-eyes">Для вух</label>
+                    <input type="checkbox" id="for-eyes" name="for-eyes">
+                </div>
+                <div class="categories-filter__item">
+                    <label for="loseweight">Для схуднення</label>
+                    <input type="checkbox" id="loseweight" name="loseweight">
+                </div>
+                <div class="categories-filter__item">
+                    <span>Засоби від алергуї</span>
+                    <input type="checkbox">
+                </div>
+                <div class="categories-filter__item">
+                    <span>Захворювання крові</span>
+                    <input type="checkbox">
+                </div>
+                <div class="categories-filter__item">
+                    <span>Здовов'я жінки</span>
+                    <input type="checkbox">
+                </div>
+                <div class="categories-filter__item">
+                    <span>Паразити</span>
+                    <input type="checkbox">
+                </div>
+            </form>
         </section>
-        <section class="products-section">
-            <div class="product">
-                <span class="product-name">Аміксин ІС таблетки 3шт</span>
-                <img src="./images/amiksin.png" alt="" class="product-img">
-                <span class="product-price">107,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Алмагель Нео зі смаком апельсину сусензія оральна 10мл 10 пакетів</span>
-                <img src="./images/almagel.png" alt="" class="product-img">
-                <span class="product-price">175,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Канефрон Н таблетки 60шт</span>
-                <img src="./images/kanefron.PNG" alt="" class="product-img">
-                <span class="product-price">235,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Аміцитрон орошок для орального розчину 10шт</span>
-                <img src="./images/amicitron.png" alt="" class="product-img">
-                <span class="product-price">127,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Гриппостад Рино срей назальний 0,1% 10мл 1 флакон</span>
-                <img src="./images/grippospad.PNG" alt="" class="product-img">
-                <span class="product-price">73,00 грн.</span>
-            </div>
-        </section>
+        <section class="category-body">
 
-        <section class="content-breaker">
-            <h1>Новинки</h1>
-        </section>
-        <section class="products-section">
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-        </section>
-
-        <section class="content-breaker">
-            <h1>Хіт-Ціна</h1>
-        </section>
-        <section class="products-section">
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
-                <span class="product-name">Приклад назви продукту</span>
-                <img src="./images/product-img.PNG" alt="" class="product-img">
-                <span class="product-price">000,00 грн.</span>
-            </div>
-        </section>
-        <section class="body-info">
-            <h1>Пошук ліків та резервування</h1>
-            <section class="advantages">
-                <div class="advantage">
-                    <img src="./images/price-adv.png">
-                    <div class="advantage-text">
-                        <h3>Зафіксовані ціни</h3>
-                        <p>Ви придбаєте ліки та інші товари у аптеці за ціною резервування</p>
-                    </div>
-                </div>
-                <div class="advantage">
-                    <img src="./images/info-adv.png">
-                    <div class="advantage-text">
-                        <h3>Актуальна інформація</h3>
-                        <p>На сайті завжди актуальна інформація щодо залишків товарів та ціни на них</p>
-                    </div>
-                </div>
-                <div class="advantage">
-                    <img src="./images/cherga-adv.png">
-                    <div class="advantage-text">
-                        <h3>Без черги в аптеці</h3>
-                        <p>Сформоване замовлення ви зможете забрати в аптеці поза чергою</p>
-                    </div>
-                </div>
-            </section>
-            <section class="reserv-info">
-                <h2>Чому можливе тільки резервування ліків</h1>
-                <p>
-                    В Україні дозволено продавати ліки винятково в аптечних закладах. Виробництво і продаж лікарських засобів належать до виду діяльності,
-                    який має високий ступінь ризику та підлягає обов’язковому ліцензуванню, – адже йдеться про здоров’я та навіть життя наших громадян.
-                    Це означає, що усі аптечні заклади працюють з дозволу та під пильним наглядом держави.
-                </p>
-                <p>
-                    Єдиний спосіб, у який аптеки можуть використовувати Інтернет, – мати сайт своєї аптеки, де публікувати асортимент ліків,
-                    медичних виробів та іншої продукції, що дозволена до продажу в аптеках, та ціни на них. Таким чином, ліки, що перебувають
-                    в легальному обігу, є під пильним контролем держави.
-                </p>
-            </section>
         </section>
     </main>
 
     <footer>
         <section class="footer">
             <section class="downloads">
-                <img src="./images/addstore.png" alt="">
-                <img src="./images/google-play.png" alt="">
+                <img src="../images/addstore.png" alt="">
+                <img src="../images/google-play.png" alt="">
             </section>
             <section class="footer-info">
                 <p>САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВЯ</p>
@@ -293,10 +206,10 @@
             <section class="socials">
                 <p>Соціальні мережі:</p>
                 <div class="social-imgs">
-                    <a href=""><img src="./images/facebook.png" alt=""></a>
-                    <a href=""><img src="./images/instagram.png" alt=""></a>
-                    <a href=""><img src="./images/vk.png" alt=""></a>
-                    <a href=""><img src="./images/telegram.png" alt=""></a>
+                    <a href=""><img src="../images/facebook.png" alt=""></a>
+                    <a href=""><img src="../images/instagram.png" alt=""></a>
+                    <a href=""><img src="../images/vk.png" alt=""></a>
+                    <a href=""><img src="../images/telegram.png" alt=""></a>
                 </div>
             </section>
         </section>
