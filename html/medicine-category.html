@@ -14,7 +14,7 @@
         <section class="header">
             <section class="main-nav">
                 <ul class="main-nav__items">
-                    <img src="./images/phone-icon.PNG">
+                    <img src="../images/phone-icon.PNG">
                     <li class="main-nav__item">
                         (063) 228-47-84
                     </li>
@@ -38,7 +38,7 @@
             <section class="main-header">
                 <div>
                     <a href="" class="main-header__brand">
-                        <img src="./images/logo.png" alt="Аптека Хорошого дня - ваша найкраща Аптека">
+                        <img src="../images/logo.png" alt="Аптека Хорошого дня - ваша найкраща Аптека">
                     </a>
                 </div>
                 <div class="search">
@@ -49,7 +49,7 @@
                 </div>
                 <div>
                     <div class="basket">
-                        <img src="./images/basket.PNG" alt="Кошик">
+                        <img src="../images/basket.PNG" alt="Кошик">
                         <div class="basket-info">
                             <a href="">КОШИК</a>
                             <span>пусто</span>
@@ -148,49 +148,56 @@
     </header>
 
     <main>
-        <section class="category-filter">
-            <form action="" class="categories-filter__items">
-                <div class="categories-filter__item">
-                    <label for="imunoglobulins">Імуноглобуліни</label>
-                    <input type="checkbox" id="imunoglobulins" name="imunoglobulins">
-                </div>
-                <div class="categories-filter__item">
-                    <label for="heals">Аптечки медичні</label>
-                    <input type="checkbox" id="heals" name="heals">
-                </div>
-                <div class="categories-filter__item">
-                    <label for="breath-system">Дихальна система</label>
-                    <input type="checkbox" id="breath-system" name="breath-system">
-                </div>
-                <div class="categories-filter__item">
-                    <label for="for-eyes">Для вух</label>
-                    <input type="checkbox" id="for-eyes" name="for-eyes">
-                </div>
-                <div class="categories-filter__item">
-                    <label for="loseweight">Для схуднення</label>
-                    <input type="checkbox" id="loseweight" name="loseweight">
-                </div>
-                <div class="categories-filter__item">
-                    <span>Засоби від алергуї</span>
-                    <input type="checkbox">
-                </div>
-                <div class="categories-filter__item">
-                    <span>Захворювання крові</span>
-                    <input type="checkbox">
-                </div>
-                <div class="categories-filter__item">
-                    <span>Здовов'я жінки</span>
-                    <input type="checkbox">
-                </div>
-                <div class="categories-filter__item">
-                    <span>Паразити</span>
-                    <input type="checkbox">
-                </div>
-            </form>
-        </section>
-        <section class="category-body">
+        <h1>МЕДИКАМЕНТИ</h1>
+        <section class="filters-applied">
 
         </section>
+        <section class="category-content">
+            <section class="category-filter">
+                <form action="" class="categories-filter__items">
+                    <div class="categories-filter__item">
+                        <label for="imunoglobulins">Імуноглобуліни</label>
+                        <input type="checkbox" id="imunoglobulins" name="imunoglobulins">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="heals">Аптечки медичні</label>
+                        <input type="checkbox" id="heals" name="heals">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="breath-system">Дихальна система</label>
+                        <input type="checkbox" id="breath-system" name="breath-system">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="for-eyes">Для вух</label>
+                        <input type="checkbox" id="for-eyes" name="for-eyes">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="loseweight">Для схуднення</label>
+                        <input type="checkbox" id="loseweight" name="loseweight">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="alergy">Засоби від алергуї</label>
+                        <input type="checkbox" name="alergy" id="alergy">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="blood-sickness">Захворювання крові</label>
+                        <input type="checkbox" id="blood-sickness" name="blood-sickness">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="women-health">Здовов'я жінки</label>
+                        <input type="checkbox" id="women-health" name="women-health">
+                    </div>
+                    <div class="categories-filter__item">
+                        <label for="parasits">Паразити</label>
+                        <input type="checkbox" id="parasits" name="parasits">
+                    </div>
+                </form>
+            </section>
+            <section class="category-body">
+
+            </section>
+        </section>
+       
     </main>
 
     <footer>
@@ -216,5 +223,6 @@
         <section class="copyright">MAKSIM@2019</section>
     </footer>
 </body>
-<script src="./index.js"></script>
+<script src="../index.js"></script>
+<script src="../js/categories-script.js"></script>
 </html>
