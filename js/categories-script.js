@@ -23,11 +23,15 @@ parameters = () => {
     for(var i = 0; i < checkbox.length; i++) {
         checkbox[i].addEventListener('change', function() {
             if (this.checked) {
-                this.parentElement.parentElement.submit();
-            } else {
                 if (!parameters().includes(this.name))
                     this.parentElement.parentElement.submit();
+            } else {
+                this.parentElement.parentElement.submit();
             }
         })
     }
+}
+
+function getLastPosition() {
+    document.location.reload(true);
 }
