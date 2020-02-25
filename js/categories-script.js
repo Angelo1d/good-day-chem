@@ -1,12 +1,34 @@
 parameters = () => {
     var queryString = window.location.search.substr(1);
-    console.log(queryString)
     var checkedCheckboxes = Array();
     queryString = queryString.split('&');
     queryString.forEach(cur => {
         checkedCheckboxes.push(cur.split('=')[0]);
     })
+    if (checkedCheckboxes[0] === "")
+        checkedCheckboxes = Array()
     return(checkedCheckboxes)
+}
+
+{
+    var params = parameters();
+    var insertDiv = document.querySelector(".filters-applied");
+    insertDiv.style.add
+    console.log(!params.length == 0)
+    if (!params.length == 0) {
+        var generatedHTML = '<div><h3>Вибрані категорії: </h3>';
+        params.forEach(cur => {
+            let categotyName = document.querySelector(`label[for="${cur}"]`).textContent;
+            generatedHTML += `<div class="active-filter">
+                                <span>${categotyName}</span>
+                                <label for="${cur}"><img src="../images/cancel.png" alt=""></label>
+                            </div>`;
+        });
+        generatedHTML += "</div>"
+        insertDiv.insertAdjacentHTML('beforeend', generatedHTML);
+    } else {
+        insertDiv.style.visbility = "hidden";
+    }
 }
 
 {

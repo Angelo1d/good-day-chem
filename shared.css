@@ -362,3 +362,33 @@ footer {
     height: 100%;
     margin-right: 3px;
 }
+
+.active-category,
+.active-category button,
+.active-category > div,
+.active-category .arrow {
+    background: white;
+    color: #0A9400;
+}
+
+.active-category {
+    border-radius: 10px;
+}
+
+.active-category .arrow {
+    border-color: #0A9400;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 1300px;
+    width: 90%;
+    min-width: 1100px;
+    text-align: left;
+}
+
+main img {
+    max-width: 100%;
+}

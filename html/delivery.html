@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аптека Доброго Дня</title>
     <link rel="stylesheet" href="../shared.css">
-    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/delivery.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
     <header>
         <section class="header">
             <section class="main-nav">
-                <ul class="main-nav__items">
+                <ul class="main-nav__items" style="font-style:normal">
                     <img src="../images/phone-icon.PNG">
                     <li class="main-nav__item">
                         (063) 228-47-84
@@ -59,7 +59,7 @@
             </section>
             <section class="header-categories">
                 <ul class="section-categories__items">
-                    <li class="section-categories__item dropdown  active-category">
+                    <li class="section-categories__item dropdown">
                         <a href="./medicine-category.html"><button class="dropbtn">медикаменти</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content">
@@ -148,91 +148,100 @@
     </header>
 
     <main>
-        <h1>МЕДИКАМЕНТИ</h1>
-        <section class="filters-applied"></section>
-        <section class="category-content">
-            <section class="category-filter">
-                <form action="" class="categories-filter__items">
-                    <div class="categories-filter__item">
-                        <label for="imunoglobulins">Імуноглобуліни</label>
-                        <input type="checkbox" id="imunoglobulins" name="imunoglobulins">
+        <h1>ОПЛАТА І ДОСТАВКА</h1>
+        <h2>СПОСОБИ ДОСТАВКИ:</h2>
+        <div class="sub-p">
+            <ul class="delivery-type">
+                <li>
+                    Доставка кур'єром
+                    <p><b>Увага!</b> Будь-яка адресна доставка здійснюється на товари, які не є медичними препаратами! 
+                        Наші працівники оперативно доставлять замовлення за вказаною Вами адресою  у зручний для Вас час.</p>
+                    <b>Графік доставки</b>
+                    <div class="sub-p">
+                        <p>По Києву доставка товарів здійснюється:</p>
+                        <div class="sub-p">
+                            <p>з 09:00 до 21:00 у робочі дні</p>
+                            <p>з 10:00 до 18:00 у суботу, неділю</p>
+                        </div>
+                        <p>Наші працівники оперативно доставлять замовлення за вказаною Вами адресою  у зручний для Вас час.</p>
+                        <p>Кур'єр продемонструє цілісність, комплектність, а також оформить усі необхідні документи.</p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="heals">Аптечки медичні</label>
-                        <input type="checkbox" id="heals" name="heals">
+                    <b>Вартість доставки</b>
+                    <div class="sub-p">
+                        <p>Безкоштовно - на суму понад 500 грн. (48 годин.)</p>
+                        <p>Доставка замовлень масою понад 1 кг та об'ємом більше 4 дм3 здійснюється платно, згідно з розцінками адресної доставки.</p>
+                        <p>Доставка препаратів температурного (t) режиму здійснюється платно.</p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="breath-system">Дихальна система</label>
-                        <input type="checkbox" id="breath-system" name="breath-system">
+                    <b>Способи оплати замовлень з кур'єрською доставкою.</b>
+                    <div class="sub-p">
+                        <p>Готівковий розрахунок.</p>
+                        <p>Кур'єру за фактом отримання товару «з рук в руки».</p>
+                        <p>Безготівковій розрахунок.</p>
+                        <p>Передоплата по виставленому рахунку. </p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="for-eyes">Для вух</label>
-                        <input type="checkbox" id="for-eyes" name="for-eyes">
+                    <b>Як працює служба доставки?</b>
+                    <div class="sub-p">
+                        <p>Якщо замовлення надійшло в робочий час служби доставки, оператор зв'яжеться з Вами по телефону для підтвердження замовлення і уточнення деталей доставки.</p>
+                        <p>Для замовлень, що надійшли не в робочий час, чекайте дзвінка оператора на наступний день.</p>
+                        <p>Якщо Ви потребуєте термінової доставки або доставку до конкретного часу, залиште, будь ласка, свої побажання в коментарях до замовлення. Додаткові питання 
+                            можна уточнити зателефонувавши до кол-центр <b>0 (800) 500 129</b>.</p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="loseweight">Для схуднення</label>
-                        <input type="checkbox" id="loseweight" name="loseweight">
+                </li>
+                <li>
+                    Самовивіз
+                    <div class="sub-p">
+                        <p>Якщо Ви бажаєте забрати своє замовлення з аптеки самостійно, для зручності Ви можете попередньо забронювати його по телефону, або через сайт.</p>
+                        <p> Після підтвердження замовлення оператором - відразу можна їхати в аптеку.</p>
+                        <p> Зателефонувавши за номером гарячої лінії <b>0 (800) 500-129</b> (дзвінки зі стаціонарних телефонів безкоштовні). Ви також отримаєте інформацію про те, в який найближчій аптеці необхідний Вам товар є в наявності.</p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="alergy">Засоби від алергуї</label>
-                        <input type="checkbox" name="alergy" id="alergy">
+                </li>
+                <li>
+                    Доставка Новою Поштою
+                    <p>Якщо у Вашому місті немає аптек мережі «Аптека Доброго Дня» але є відділення кур'єрської служби Нова Пошта, Ви можете отримати замовлення, скориставшись цим способом.</p>
+                    <p>Доставка здійснюється в межах України при замовленні на суму понад 300 гривень накладенним платежем.</p>
+                    <p>Відправка замовлення день в день, отримання на складі Нової Пошти по прибуттю товару (час доставки по Україні від 1 до 3-х днів).</p>
+                    <p>Відправка НП тільки "Склад-Склад" (тільки до відділення НП).</p>
+                    <p>Доставка оплачується відповідно до тарифів кур'єрської служби.</p>
+                    <p>Увага! Нова Пошта не робить доставку в республіку Крим.</p>
+                    <p>При відправці Новою Поштою препаратів температурного (t) режиму до вартості препарату + 250,00грн (за термобокс і хладагенти).</p>
+                    <p>Відправка післяплатою від 500 грн.</p>
+                </li>
+            </ul>
+        </div>
+        <h2>СПОСОБИ ОПЛАТИ:</h2>
+        <div class="sub-p">
+            <ul class="delivery-type">
+                <li>
+                    При отриманні замовлення
+                    <div class="sub-p">
+                        <p>Даний спосіб оплати діє в таких містах:</p>
+                        <p>Київ, Одеса, Харків, Дніпро, Львів, Вінниця, Запоріжжя, Кременчук, Кривий Ріг, Тернопіль, Хмельницький.</p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="blood-sickness">Захворювання крові</label>
-                        <input type="checkbox" id="blood-sickness" name="blood-sickness">
+                </li>
+                <li>
+                    В Аптеці
+                    <div class="sub-p">
+                        <p>Даний вид оплати можливий при отриманні замовлення безпосередньо в одній з наших аптек шляхом самовивозу.</p>
+                        <p>Також, в аптеці Ви маєте можливість оплатити товар пластиковими картами Visa, MasterCard, Maestro.</p>
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="women-health">Здовов'я жінки</label>
-                        <input type="checkbox" id="women-health" name="women-health">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="parasits">Паразити</label>
-                        <input type="checkbox" id="parasits" name="parasits">
-                    </div>
-                </form>
-            </section>
-            <section class="category-body">
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article>
-                <i aria-hidden="true"></i>
-                <i aria-hidden="true"></i>
-                <i aria-hidden="true"></i>
-            </section>
-        </section>
-       
+                </li>
+                <li>
+                    У відділенні Нової Пошти при отриманні замовлення
+                    <p>Відправка НП тільки "Склад-Склад" (тільки до відділення НП). </p>
+                </li>
+            </ul>
+        </div>
+        <h2>ЯК ЗРОБИТИ ЗАМОВЛЕННЯ?</h2>
+        <div class="sub-p">
+            <ul style="list-style: circle;">
+                <li>Що б знайти товар досить ввести в рядку пошуку перші 3-4 літери назви товару.</li>
+                <li>Виберіть кількість упаковок і натисніть на кнопку «Додати в корзину».</li>
+                <li>Після наповнення кошика потрібними товарами, натисніть на кнопку «Оформити замовлення».</li>
+                <li>Для завершення замовлення необхідно заповнити невелику форму.</li>
+                <li>Після заповнення обов'язкових пунктів, натисніть кнопку «Оформити замовлення».</li>
+                <li>Найближчим часом Вам передзвонить оператор і уточнить деталі доставки.</li>
+            </ul>
+        </div>
     </main>
 
     <footer>
