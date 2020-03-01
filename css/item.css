@@ -1,14 +1,14 @@
 main {
     flex-direction: row;
-    justify-content: space-between;
     padding: 10px 0;
+    margin-top: 20px;
 }
 
 .del-info {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
+    display: inline-block;
+    min-width: 250px;
     background: #E3E3E3;
+    height: 170px;
 }
 
 .del-info span {
@@ -35,19 +35,19 @@ main {
 }
 
 .item-body {
-    display: flex;
     flex-grow: 1;
+    display: flex;
     margin-right: 25px;
     flex-direction: column;
 }
 
 .main-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .gallery {
-    width: 450px;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
 }
@@ -79,3 +79,63 @@ main {
     line-height: 42px;
 }
 
+.buy-info {
+    width: 500px;
+}
+
+.order {
+    background: #50B948;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order span {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.order input {
+    padding: 10px 20px;
+    background: #0A9400;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.item-separator {
+    margin-top: 20px;
+    background: #50B948;
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.sub-p {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.description ul li {
+    font-weight: bold;
+    font-size: 19pxpx;
+    margin-bottom: 20px;
+}
+
+.description li p {
+    font-weight: normal;
+}
+
+.description p {
+    text-indent: 15px;
+    margin: 0;
+}

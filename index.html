@@ -11,38 +11,45 @@
 </head>
 <body>
     <header>
-        <section class="header" id="header">
+        <section class="header">
             <section class="main-nav">
-                <ul class="main-nav__items">
-                    <img src="./images/phone-icon.PNG" alt="phone-icon">
+                <ul class="main-nav__items" style="font-style:normal">
+                    <img src="./images/phone-icon.PNG">
                     <li class="main-nav__item">
                         (063) 228-47-84
                     </li>
                     <li class="main-nav__item">
-                        <a href="">оплата і доставка</a>
+                        <a href="./html/delivery.html">оплата і доставка</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">аптеки</a>
+                        <a href="./html/stores-map.html">аптеки</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">про нас</a>
+                        <a href="./html/about.html">про нас</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">особистий кабінет</a>
+                        <a href="./html/auth.html">особистий кабінет</a>
                     </li>
                     <li class="main-nav__item" style="border: none;">
-                        <a href="">мова</a>
+                        <div class="lang-dropdown">
+                            <button onclick="myFunction()" class="lang-dropbtn">мова</button>
+                            <div id="lang-myDropdown" class="lang-dropdown-content">
+                              <a href="#">Ukr</a>
+                              <a href="#">Rus</a>
+                              <a href="#">Eng</a>
+                            </div>
+                          </div>
                     </li>
                 </ul>
             </section>
-            <section class="main-header" id="main-header">
+            <section class="main-header">
                 <div>
-                    <a href="" class="main-header__brand">
+                    <a href="./index.html" class="main-header__brand">
                         <img src="./images/logo.png" alt="Аптека Хорошого дня - ваша найкраща Аптека">
                     </a>
                 </div>
                 <div class="search">
-                    <form action="test" class="main-header__search">
+                    <form action="./html/search.html" class="main-header__search">
                         <input type="text" name="search-value" id="search-value" placeholder="Назва, виробник ...">
                         <input type="submit" value="Пошук" id="search-sbm">
                     </form>
@@ -51,94 +58,94 @@
                     <div class="basket">
                         <img src="./images/basket.PNG" alt="Кошик">
                         <div class="basket-info">
-                            <a href="">КОШИК</a>
+                            <a href="./html/basket.html">КОШИК</a>
                             <span>пусто</span>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="header-categories" id="header-categories">
+            <section class="header-categories">
                 <ul class="section-categories__items">
                     <li class="section-categories__item dropdown">
-                        <a href="./html/medicine-category.html"><button class="dropbtn">медикаменти</button></a>
+                        <a href="./medicine-category.html"><button class="dropbtn">медикаменти</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content">
-                            <a href="./html/medicine-category.html?imunoglobulins=on">Імуноглобуліни</a>
-                            <a href="./html/medicine-category.html?heals=on">Аптечки медичні</a>
-                            <a href="./html/medicine-category.html?breath-system=on">Дихальна система</a>
-                            <a href="./html/medicine-category.html?for-eyes=on">Для вух</a>
-                            <a href="./html/medicine-category.html?loseweight=on">Для схуднення</a>
-                            <a href="./html/medicine-category.html?alergy=on">Засоби від алергії</a>
-                            <a href="./html/medicine-category.html?blood-sickness=on">Захворювання крові</a>
-                            <a href="./html/medicine-category.html?women-health=on">Здоров'я жінки</a>
-                            <a href="./html/medicine-category.html?parasits=on">Паразити</a>
+                            <a href="./medicine-category.html?imunoglobulins=on">Імуноглобуліни</a>
+                            <a href="./medicine-category.html?heals=on">Аптечки медичні</a>
+                            <a href="./medicine-category.html?breath-system=on">Дихальна система</a>
+                            <a href="./medicine-category.html?for-eyes=on">Для вух</a>
+                            <a href="./medicine-category.html?loseweight=on">Для схуднення</a>
+                            <a href="./medicine-category.html?alergy=on">Засоби від алергії</a>
+                            <a href="./medicine-category.html?blood-sickness=on">Захворювання крові</a>
+                            <a href="./medicine-category.html?women-health=on">Здоров'я жінки</a>
+                            <a href="./medicine-category.html?parasits=on">Паразити</a>
                         </div>
                     </li>
                     <li class="section-categories__item dropdown">
-                        <a href="./html/cosmetics-category.html"><button class="dropbtn">косметика</button></a>
+                        <a href="./cosmetics-category.html"><button class="dropbtn">косметика</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content">
-                            <a href="./html/cosmetics-category.html?face-cosmetics=on">Косметика для обличчя</a>
-                            <a href="./html/cosmetics-category.html?hair-cosmetics=on">Косметика для волосся</a>
-                            <a href="./html/cosmetics-category.html?body-cosmetics=on">Косметика для тіла, рук, ніг</a>
-                            <a href="./html/cosmetics-category.html?nails-cosmetics=on">Косметика для нігтів</a>
-                            <a href="./html/cosmetics-category.html?shower-cosmetics=on">Косметика для ванни і душа</a>
-                            <a href="./html/cosmetics-category.html?collection-cosmetics=on">Набори</a>
-                            <a href="./html/cosmetics-category.html?corean-cosmetics=on">Корейська косметика</a>
-                            <a href="./html/cosmetics-category.html?decor-cosmetics=on">Декоративна косметика</a>
-                            <a href="./html/cosmetics-category.html?sun-protect=on">Сонцезахисні засоби</a>
-                            <a href="./html/cosmetics-category.html?men-care=on">Догляд для чоловіків</a>
+                            <a href="./cosmetics-category.html?face-cosmetics=on">Косметика для обличчя</a>
+                            <a href="./cosmetics-category.html?hair-cosmetics=on">Косметика для волосся</a>
+                            <a href="./cosmetics-category.html?body-cosmetics=on">Косметика для тіла, рук, ніг</a>
+                            <a href="./cosmetics-category.html?nails-cosmetics=on">Косметика для нігтів</a>
+                            <a href="./cosmetics-category.html?shower-cosmetics=on">Косметика для ванни і душа</a>
+                            <a href="./cosmetics-category.html?collection-cosmetics=on">Набори</a>
+                            <a href="./cosmetics-category.html?corean-cosmetics=on">Корейська косметика</a>
+                            <a href="./cosmetics-category.html?decor-cosmetics=on">Декоративна косметика</a>
+                            <a href="./cosmetics-category.html?sun-protect=on">Сонцезахисні засоби</a>
+                            <a href="./cosmetics-category.html?men-care=on">Догляд для чоловіків</a>
                         </div>
                     </li>
                     <li class="section-categories__item dropdown">
-                        <a href="./html/stuff-category.html"><button class="dropbtn">медичні товари</button></a>
+                        <a href="./stuff-category.html"><button class="dropbtn">медичні товари</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content">
-                            <a href="./html/stuff-category.html?instruments=on">Медичні інструменти</a>
-                            <a href="./html/stuff-category.html?clothes=on">Медичний одяг</a>
-                            <a href="./html/stuff-category.html?orto-stuff=on">Ортопедичні товари</a>
-                            <a href="./html/stuff-category.html?stuff-for-sick=on">Засоби догляду за хворими</a>
-                            <a href="./html/stuff-category.html?bandage-staff=on">Перев'язувальні засоби</a>
-                            <a href="./html/stuff-category.html?aid-kit=on">Аптечки першої допомоги</a>
-                            <a href="./html/stuff-category.html?diag-stuff=on">Діагностичні засоби</a>
-                            <a href="./html/stuff-category.html?home-med-staff=on">Домашні медичні прибори</a>
-                            <a href="./html/stuff-category.html?contraception=on">Засоби контрацепції</a>
-                            <a href="./html/stuff-category.html?med-gloves=on">Медичні рукавички</a>
+                            <a href="./stuff-category.html?instruments=on">Медичні інструменти</a>
+                            <a href="./stuff-category.html?clothes=on">Медичний одяг</a>
+                            <a href="./stuff-category.html?orto-stuff=on">Ортопедичні товари</a>
+                            <a href="./stuff-category.html?stuff-for-sick=on">Засоби догляду за хворими</a>
+                            <a href="./stuff-category.html?bandage-staff=on">Перев'язувальні засоби</a>
+                            <a href="./stuff-category.html?aid-kit=on">Аптечки першої допомоги</a>
+                            <a href="./stuff-category.html?diag-stuff=on">Діагностичні засоби</a>
+                            <a href="./stuff-category.html?home-med-staff=on">Домашні медичні прибори</a>
+                            <a href="./stuff-category.html?contraception=on">Засоби контрацепції</a>
+                            <a href="./stuff-category.html?med-gloves=on">Медичні рукавички</a>
                         </div>
                     </li>
                     <li class="section-categories__item dropdown">
-                        <a href="./html/kids-category.html"><button class="dropbtn">мама та дитина</button></a>
+                        <a href="./kids-category.html"><button class="dropbtn">мама та дитина</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content">
-                            <a href="./html/kids-category.html?dumplings=on">Дитячі підгузники та пелюшки</a>
-                            <a href="./html/kids-category.html?food=on">Дитяче харчування</a>
-                            <a href="./html/kids-category.html?mom-stuff=on">Товари для мам</a>
-                            <a href="./html/kids-category.html?feeding=on">Годування</a>
-                            <a href="./html/kids-category.html?bathing=on">Купання та догляд</a>
-                            <a href="./html/kids-category.html?games=on">Іграшки, розвивваючі ігри</a>
+                            <a href="./kids-category.html?dumplings=on">Дитячі підгузники та пелюшки</a>
+                            <a href="./kids-category.html?food=on">Дитяче харчування</a>
+                            <a href="./kids-category.html?mom-stuff=on">Товари для мам</a>
+                            <a href="./kids-category.html?feeding=on">Годування</a>
+                            <a href="./kids-category.html?bathing=on">Купання та догляд</a>
+                            <a href="./kids-category.html?games=on">Іграшки, розвивваючі ігри</a>
                         </div>
                     </li>
                     <li class="section-categories__item dropdown">
-                        <a href="./html/vitamins.html"><button class="dropbtn">вітаміни</button></a>
+                        <a href="./vitamins.html"><button class="dropbtn">вітаміни</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content">
-                            <a href="./html/vitamins.html?vitamins=on">Вітаміни та добавки</a>
-                            <a href="./html/vitamins.html?bads=on">БАДи для зовнішнього застосування</a>
-                            <a href="./html/vitamins.html?diet=on">Дієта та схуднення</a>
+                            <a href="./vitamins.html?vitamins=on">Вітаміни та добавки</a>
+                            <a href="./vitamins.html?bads=on">БАДи для зовнішнього застосування</a>
+                            <a href="./vitamins.html?diet=on">Дієта та схуднення</a>
                         </div>
                     </li>
                     <li class="section-categories__item dropdown" style="border: none;">
-                        <a href="./html/gigien-category.html"><button class="dropbtn">гігієна</button></a>
+                        <a href="./gigien-category.html"><button class="dropbtn">гігієна</button></a>
                         <div class="arrow arrow-bottom"></div>
                         <div class="dropdown-content reverse-width">
-                            <a href="./html/gigien-category.html?hair-care=on">Догляд за волоссям</a>
-                            <a href="./html/gigien-category.html?bath-staff=on">Засоби для миття та купання</a>
-                            <a href="./html/gigien-category.html?mouth-stuff=on">Засоби для ротової порожнини</a>
-                            <a href="./html/gigien-category.html?women-gigien=on">Засоби гігієни для жінок</a>
-                            <a href="./html/gigien-category.html?self-gigien=on">Особиста гігієна</a>
-                            <a href="./html/gigien-category.html?adult-gigien=on">Гігієна для дорослих</a>
-                            <a href="./html/gigien-category.html?face-beauty=on">Краса обличча</a>
-                            <a href="./html/gigien-category.html?body-care=on">Догляд за тілом</a>
+                            <a href="./gigien-category.html?hair-care=on">Догляд за волоссям</a>
+                            <a href="./gigien-category.html?bath-staff=on">Засоби для миття та купання</a>
+                            <a href="./gigien-category.html?mouth-stuff=on">Засоби для ротової порожнини</a>
+                            <a href="./gigien-category.html?women-gigien=on">Засоби гігієни для жінок</a>
+                            <a href="./gigien-category.html?self-gigien=on">Особиста гігієна</a>
+                            <a href="./gigien-category.html?adult-gigien=on">Гігієна для дорослих</a>
+                            <a href="./gigien-category.html?face-beauty=on">Краса обличча</a>
+                            <a href="./gigien-category.html?body-care=on">Догляд за тілом</a>
                         </div>
 
                     </li>
@@ -151,93 +158,93 @@
             <h1>Вигідні пропозиції сезону</h1>
         </section>
         <section class="products-section">
-            <div class="product">
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Аміксин ІС таблетки 3шт</span>
                 <img src="./images/amiksin.png" alt="" class="product-img">
                 <span class="product-price">107,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Алмагель Нео зі смаком апельсину сусензія оральна 10мл 10 пакетів</span>
                 <img src="./images/almagel.png" alt="" class="product-img">
                 <span class="product-price">175,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Канефрон Н таблетки 60шт</span>
                 <img src="./images/kanefron.PNG" alt="" class="product-img">
                 <span class="product-price">235,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Аміцитрон орошок для орального розчину 10шт</span>
                 <img src="./images/amicitron.png" alt="" class="product-img">
                 <span class="product-price">127,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Гриппостад Рино срей назальний 0,1% 10мл 1 флакон</span>
                 <img src="./images/grippospad.PNG" alt="" class="product-img">
                 <span class="product-price">73,00 грн.</span>
-            </div>
+            </div></a>
         </section>
 
         <section class="content-breaker">
             <h1>Новинки</h1>
         </section>
         <section class="products-section">
-            <div class="product">
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
+            </div></a>
         </section>
 
         <section class="content-breaker">
             <h1>Хіт-Ціна</h1>
         </section>
         <section class="products-section">
-            <div class="product">
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
-            <div class="product">
+            </div></a>
+            <a href="./html/item.html"><div class="product">
                 <span class="product-name">Приклад назви продукту</span>
                 <img src="./images/product-img.PNG" alt="" class="product-img">
                 <span class="product-price">000,00 грн.</span>
-            </div>
+            </div></a>
         </section>
         <section class="body-info">
             <h1>Пошук ліків та резервування</h1>

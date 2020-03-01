@@ -1,0 +1,251 @@
+main {
+    padding-bottom: 20px;
+}
+
+.rd {
+    border: 1px solid red !important;
+}
+
+.basket-container {
+    width: 100%;
+    border: none;
+}
+
+td {
+    min-width: 70px;
+    max-width: 40%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+td img {
+    max-height: 150px;
+    display: block;
+    margin: 0;
+    margin: auto;
+}
+
+.product-name {
+    text-align: left;
+}
+
+div {
+    margin: 0;
+}
+
+.header-row {
+    color: #9E9D9D;
+    font-size: 15px;
+}
+
+.header-row td:first-child {
+    text-align: left;
+}
+
+.header-row td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+tr p {
+    margin: 0;
+    margin-bottom: 5px;
+    text-indent: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+    padding: 0;
+  cursor: pointer;
+  font-size: 25px;
+  min-width: 40px;
+  outline: none;
+  font-style: normal;
+  color: rgb(51, 202, 46);
+  border: 0;
+  background: inherit;
+}
+
+.quantity-num {
+    width: 50px;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.quantity div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel-order button{
+    padding: 0;
+    border: none;
+    background: inherit;
+}
+
+.total-price {
+    background: #ccc;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin-bottom: 40px;
+}
+
+.total-price span {
+    font-size: 25px;
+}
+
+.total-price h1 {
+    margin: 0;
+    margin-bottom: 5px;   
+}
+
+.no-orders {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+.no-orders p {
+    font-size: 23px;
+    line-height: 25px;
+    color: rgb(110, 109, 109);
+    margin-bottom: 10px;
+    text-indent: 0;
+}
+
+.continue-orders {
+    background: #0A9400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 25px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.continue-orders:hover {
+    color: #0A9400;
+    background: white;
+}
+
+.order-confirm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.order-confirm section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 10px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.order-confirm section h2 {
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    background: rgb(224, 224, 224);
+    margin: 0;
+}
+
+.field, .radio-field {
+    padding: 0 5px 5px 5px;
+    margin-top: 15px;
+}
+
+.field, .radio-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field span {
+    margin: 0 0 4px 10px;
+    font-size: 17px;
+}
+
+.field input {
+    padding: 3px 10px;
+    height: 40px;
+    min-width: 350px;
+    border-radius: 5px;
+    border: 1px solid #0A9400;
+}
+
+.delivery-type,
+.payment-type {
+    min-width: 350px;
+}
+
+.radio-field {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-del {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.payment-type {
+    margin-top: 20px;
+}
+
+.order-confirm input[type="submit"] {
+    background: #0A9400;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,5);
+    transition: 0.3s;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-confirm input[type="submit"]:hover {
+    color: #0A9400;
+    background: white;   
+}
+
+

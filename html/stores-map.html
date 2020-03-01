@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аптека Доброго Дня</title>
     <link rel="stylesheet" href="../shared.css">
-    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/stores-map.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +22,7 @@
                         <a href="./delivery.html">оплата і доставка</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="./stores-map.html">аптеки</a>
+                        <a href="./stores-map.html" class="active-link">аптеки</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="./about.html">про нас</a>
@@ -155,82 +155,43 @@
     </header>
 
     <main>
-        <h1>ГІГІЄНА</h1>
-        <section class="filters-applied"></section>
-        <section class="category-content">
-            <section class="category-filter">
-                <form action="" class="categories-filter__items">
-                    <div class="categories-filter__item">
-                        <label for="hair-care">Догляд за волоссям</label>
-                        <input type="checkbox" id="hair-care" name="hair-care">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="bath-stuff">Засоби для миття та купання</label>
-                        <input type="checkbox" id="bath-stuff" name="bath-stuff">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="mouth-stuff">Засоби для ротової порожнини</label>
-                        <input type="checkbox" id="mouth-stuff" name="mouth-stuff">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="women-gigien">Засоби гігієни для жінок</label>
-                        <input type="checkbox" id="women-gigien" name="women-gigien">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="self-gigien">Особиста гігієна</label>
-                        <input type="checkbox" id="self-gigien" name="self-gigien">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="adult-gigien">Гігієна для дорослих</label>
-                        <input type="checkbox" id="adult-gigien" name="adult-gigien">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="face-beauty">Краса обличча</label>
-                        <input type="checkbox" id="face-beauty" name="face-beauty">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="body-care">Догляд за тілом</label>
-                        <input type="checkbox" id="body-care" name="body-care">
-                    </div>
-                </form>
-            </section>
-            <section class="category-body">
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <i aria-hidden="true"></i>
-                <i aria-hidden="true"></i>
-                <i aria-hidden="true"></i>
-            </section>
-        </section>
-       
+        <h1>КАРТА МАГАЗИНІВ</h1>
+        <div class="line"></div>
+        <form action="" class="shop-filters">
+            <div class="shop-filter">
+                <span>МІСТО</span>
+                <select id="shop-city" name="shop-city">
+                    <option selected>Виберіть місто</option>
+                    <option>Місто 1</option>
+                    <option>Місто 2</option>
+                    <option>Місто 3</option>
+                    <option>Місто 4</option>
+                </select>   
+            </div>
+            <div class="shop-filter">
+                <span>НАЙБЛИЖЧЕ ВІДДІЛЕННЯ</span>
+                <select id="closest-dep" name="closest-dep">
+                    <option selected>Оберіть найдлижчу аптеку</option>
+                    <option>Аптека 1</option>
+                    <option>Аптека 2</option>
+                    <option>Аптека 3</option>
+                    <option>Аптека 4</option>
+                </select>   
+            </div>
+            <div class="shop-filter">
+                <span>СПЕЦІАЛЬНА ПОСЛУГА</span>
+                <select id="service" name="service">
+                    <option selected>Оберіть послугу</option>
+                    <option>Послуга 1</option>
+                    <option>Послуга 2</option>
+                    <option>Послуга 3</option>
+                    <option>Послуга 4</option>
+                </select>   
+            </div>
+            <input type="submit" value="Показати на карті">
+        </form>
+
+        <div id="googleMap"></div>
     </main>
 
     <footer>
@@ -256,6 +217,15 @@
         <section class="copyright">MAKSIM@2019</section>
     </footer>
 </body>
-<script src="../index.js"></script>
-<script src="../js/categories-script.js"></script>
+<script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </html>

@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main * {
+    align-self: center;
+}
+
+main h1 {
+    color: #0A9400;
+    font-weight: 500;
+}
+
+main p {
+    line-height: 23px;
+    font-size: 21px;
+    color: rgb(124, 124, 124);
+    margin: 0;
+    text-indent: 0;
+}
+
+main a {
+    font-size: 19px;
+    text-decoration: none;
+    color: #0A9400; 
+    margin-top: 20px;
+}

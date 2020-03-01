@@ -19,19 +19,26 @@
                         (063) 228-47-84
                     </li>
                     <li class="main-nav__item">
-                        <a href="">оплата і доставка</a>
+                        <a href="./delivery.html">оплата і доставка</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">аптеки</a>
+                        <a href="./stores-map.html">аптеки</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">про нас</a>
+                        <a href="./about.html">про нас</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">особистий кабінет</a>
+                        <a href="./auth.html">особистий кабінет</a>
                     </li>
                     <li class="main-nav__item" style="border: none;">
-                        <a href="">мова</a>
+                        <div class="lang-dropdown">
+                            <button onclick="myFunction()" class="lang-dropbtn">мова</button>
+                            <div id="lang-myDropdown" class="lang-dropdown-content">
+                              <a href="#">Ukr</a>
+                              <a href="#">Rus</a>
+                              <a href="#">Eng</a>
+                            </div>
+                          </div>
                     </li>
                 </ul>
             </section>
@@ -42,7 +49,7 @@
                     </a>
                 </div>
                 <div class="search">
-                    <form action="" class="main-header__search">
+                    <form action="./search.html" class="main-header__search">
                         <input type="text" name="search-value" id="search-value" placeholder="Назва, виробник ...">
                         <input type="submit" value="Пошук" id="search-sbm">
                     </form>
@@ -51,7 +58,7 @@
                     <div class="basket">
                         <img src="../images/basket.PNG" alt="Кошик">
                         <div class="basket-info">
-                            <a href="">КОШИК</a>
+                            <a href="./basket.html">КОШИК</a>
                             <span>пусто</span>
                         </div>
                     </div>
@@ -155,17 +162,45 @@
                     <div class="gallery-items">
                         <img src="../images/almagel.png" alt="img" class="active-img">
                         <img src="../images/amicitron.png" alt="img">
-                        <img src="" alt="img">
+                        <img src="../images/rocher-item.PNG" alt="img">
                     </div>
                 </div>
                 <div class="buy-info">
                     <p>Крем La Roche-Posay Hydraphase Riche інтенсивне зволоження для сухої та чутливої шкіри 50 мл</p>
-                    
+                    <div class="order">
+                        <span>000,00 ГРН</span>                        
+                        <form action="">
+                            <input type="button" value="ДОДАТИ В КОШИК">
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="item-separator"></div>
+            <div class="item-separator">ІНСТРУКЦІЯ</div>
             <div class="description">
-
+                <div class="sub-p"><ul>
+                    <li>Показання:
+                        <div class="sub-p"><p> зневоднена, суха і чутлива шкіра обличчя.</p></div>
+                    </li>
+                    <li>Інновація:
+                        <div class="sub-p"><p> формула посилена фрагментованою гіалуроновою кислотою, 
+                            яка забезпечує інтенсивне зволоження завдяки насиченню шкіри водою і 
+                            зміцненню міжклітинних з'єднань для тривалого утримання вологи шкірою. 
+                            Поживна, комфортна, нежирна текстура. Засіб пом'якшує, заспокоює шкіру і 
+                            відновлює відчуття комфорту. Герметичний флакон з дозатором для забезпечення 
+                            оптимальної свіжості формули. Тривале зволоження шкіри. Без парабенів.</p></div>
+                    </li>
+                    <li>Результат
+                        <div class="sub-p"><p>інтенсивне зволоження протягом 24 годин для тривалого ефекту м'якої і пружної шкіри. 
+                            Містить Термальну воду La Roche-Posay.</p></div>
+                    </li>
+                    <li>Склад
+                        <div class="sub-p"><p>AQUA / WATER • GLYCERIN • BUTYROSPERMUM PARKII BUTTER / SHEA BUTTER • DIMETHICONE • POLYETHYLENE • 
+                            PARAFFINUM LIQUIDUM / MINERAL OIL • CETYL ALCOHOL • UREA • GLYCERYL LINOLEATE • PEG-100 STEARATE • 
+                            GLYCERYL STEARATE • PENTYLENE GLYCOL • STEARIC ACID • CARBOMER • GLYCERYL ACRYLATE/ACRYLIC ACID COPOLYMER • 
+                            GLYCERYL LINOLENATE • GLYCERYL OLEATE • TRIETHANOLAMINE • DISODIUM EDTA • HYDROLYZED HYALURONIC ACID • 
+                            XANTHAN GUM • POLYSORBATE 60 • TOCOPHERYL ACETATE • CAPRYLYL GLYCOL • PARFUM / FRAGRANCE. (CODE F.I.L. : B39716/1)</p></div>
+                    </li>
+                </ul></div>
             </div>
         </article>
         <article class="del-info">

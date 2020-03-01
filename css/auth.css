@@ -1,0 +1,89 @@
+main {
+    padding: 25px 0;
+}
+
+.field span {
+    margin: 0 0 4px 10px;
+    font-size: 17px;
+}
+
+.field input {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    height: 40px;
+    min-width: 350px;
+    border-radius: 5px;
+    border: 1px solid #0A9400;
+}
+
+.auth input[type="submit"] {
+    border: 1px solid #ccc;
+    color: white;
+    background: #0A9400;
+    width: auto;
+    border-radius: 5px;
+    padding: 7px 10px;
+    transition: 0.3s;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.auth input[type="submit"]:hover {
+    color: #0A9400;
+    background: white;
+}
+
+.auth {
+    border: 10px solid rgb(255, 246, 246);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.auth form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+.auth h2 {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+.line {
+    margin-bottom: 10px;
+}
+
+.auth a {
+    text-decoration: none;
+    color: #0A9400;
+    font-size: 17px;
+}
+
+.auth p {
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(119, 119, 119);
+    text-indent: 0;
+    align-self: center;
+    margin: 10px 0;
+}
+
+.register-inps {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+}

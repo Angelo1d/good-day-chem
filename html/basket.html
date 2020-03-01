@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аптека Доброго Дня</title>
     <link rel="stylesheet" href="../shared.css">
-    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/basket.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -155,82 +156,159 @@
     </header>
 
     <main>
-        <h1>ГІГІЄНА</h1>
-        <section class="filters-applied"></section>
-        <section class="category-content">
-            <section class="category-filter">
-                <form action="" class="categories-filter__items">
-                    <div class="categories-filter__item">
-                        <label for="hair-care">Догляд за волоссям</label>
-                        <input type="checkbox" id="hair-care" name="hair-care">
+        <h1>КОШИК</h1>
+        <div class="line"></div>
+        <article class="basket-container">
+            <table class="basket-container">
+                <tr class="header-row">
+                    <td colspan="2">ТОВАР</td>
+                    <td>ЦІНА</td>
+                    <td>КІЛЬКІСТЬ</td>
+                    <td>ВСЬОГО</td>
+                    <td rowspan="1">&nbsp;</td>
+                </tr>
+                <tr class="table-row">
+                    <td><img src="../images/product-img.PNG" alt="img"> </td>
+                    <td class="product-name"><p>Тут буде тестова назва нашого продукту а також його характеристики</p></td>
+                    <td><span class="single-price">100.50</span> грн</td>
+                    <td class="quantity">
+                        <p>Упаковка:</p>
+                        <div>
+                            <button class="quantity-arrow-minus" onclick="quantityMinus(this)"> - </button>
+                            <input type="number" name="" id="" class="quantity-num" value=1>
+                            <button class="quantity-arrow-plus" onclick="quantityPlus(this)"> + </button>
+                        </div>
+                    </td>
+                    <td><span class="general-price">000,00</span> грн</td>
+                    <td class="cancel-order"><button><img src="../images/cancel-order.png" alt="" onclick="deleteRow(this);"></button></td>
+                </tr>
+                <tr class="table-row">
+                    <td><img src="../images/product-img.PNG" alt="img"> </td>
+                    <td class="product-name"><p>Тут буде тестова назва нашого продукту а також його характеристики, додаткова інформаці і т.д.</p></td>
+                    <td><span class="single-price">150.50</span> грн</td>
+                    <td class="quantity">
+                        <p>Упаковка:</p>
+                        <div>
+                            <button class="quantity-arrow-minus" onclick="quantityMinus(this)"> - </button>
+                            <input type="number" name="" id="" class="quantity-num" value=1>
+                            <button class="quantity-arrow-plus" onclick="quantityPlus(this)"> + </button>
+                        </div>
+                    </td>
+                    <td><span class="general-price">000,00</span> грн</td>
+                    <td class="cancel-order"><button><img src="../images/cancel-order.png" alt="" onclick="deleteRow(this);"></button></td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <a href="../index.html" class="continue-orders"><span>Продовжити покупки</span></a>
+                <div>
+                    <h1>Всього до сплати:</h1>
+                    <span class="total-orders-price"></span> грн.
+                </div>
+            </div>
+            <h2>Оформлення замовлення</h2>
+            <div class="line"></div>
+            <div class="error-message"></div>
+
+            <div>
+                <form action="./regardings.html" class="order-confirm">
+                    <section class="customer-info">
+                        <h2>Особисті дані</h2>
+                        <div class="field">
+                            <span>І'мя *</span>
+                            <input type="text" name="name" placeholder="Петро" class="imp">
+                        </div>
+                        <div class="field">
+                            <span>Прізвище *</span>
+                            <input type="text" name="surname" placeholder="Іванов" class="imp">
+                        </div>
+                        <div class="field" name="email">
+                            <span>Електронна пошта</span>
+                            <input type="text" name="email" placeholder="usernae@domain.com">
+                        </div>
+                        <div class="field">
+                            <span>Телефон  *</span>
+                        <input type="text" name="phone" placeholder="+380XXXXXXXXX" class="imp">
                     </div>
-                    <div class="categories-filter__item">
-                        <label for="bath-stuff">Засоби для миття та купання</label>
-                        <input type="checkbox" id="bath-stuff" name="bath-stuff">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="mouth-stuff">Засоби для ротової порожнини</label>
-                        <input type="checkbox" id="mouth-stuff" name="mouth-stuff">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="women-gigien">Засоби гігієни для жінок</label>
-                        <input type="checkbox" id="women-gigien" name="women-gigien">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="self-gigien">Особиста гігієна</label>
-                        <input type="checkbox" id="self-gigien" name="self-gigien">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="adult-gigien">Гігієна для дорослих</label>
-                        <input type="checkbox" id="adult-gigien" name="adult-gigien">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="face-beauty">Краса обличча</label>
-                        <input type="checkbox" id="face-beauty" name="face-beauty">
-                    </div>
-                    <div class="categories-filter__item">
-                        <label for="body-care">Догляд за тілом</label>
-                        <input type="checkbox" id="body-care" name="body-care">
-                    </div>
+                </section>
+                <div class="middle-del">
+                    <section class="delivery-type">
+                        <h2>Спосіб доставки</h2>
+                        <div class="radio-field">
+                            <input type="radio" name="delivery" id="nova-poshta" checked/>
+                            <label for="nova-poshta">Нова Пошта</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="delivery" id="carry-out" />
+                            <label for="carry-out">Самовивіз</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="delivery" id="currier" />
+                            <label for="currier">Кур'єр</label>
+                        </div>
+                    </section>
+                    <section class="payment-type">
+                        <h2>Спосіб оплати</h2>
+                        <div class="radio-field">
+                            <input type="radio" name="payment" id="cash-carry" checked/>
+                            <label for="cash-carry">Оплати при отриманні</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="payment" id="cash-off" />
+                            <label for="cash-off">Безготівкова оплата</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="payment" id="cash-online" />
+                            <label for="cash-online">Оплата онлайн</label>
+                        </div>
+                    </section>
+                </div>
+                
+                    <section class="delivery-address">
+                        <h2>Адреса доставки</h2>
+                        <div class="nova-poshta">
+                            <div class="field">
+                                <span>Місто *</span>
+                                <input type="text" name="n-p-city" placeholder="Наприклад: Чернівці" class="imp">
+                            </div>
+                            <div class="field">
+                                <span>№ відділення *</span>
+                                <input type="text" name="n-p-depart" class="imp">
+                            </div>
+                        </div>
+                       <div class="currier">
+                            <div class="field">
+                                <span>Місто *</span>
+                                <input type="text" name="currier-city" placeholder="Наприклад: Чернівці" class="imp">
+                            </div>
+                            <div class="field">
+                                <span>Вулиця *</span>
+                                <input type="text" name="currier-street" placeholder="Наприклад: Сторожинецька" class="imp">
+                            </div>
+                            <div class="field">
+                                <span>Будинок, квартира № *</span>
+                                <input type="text" name="currier-house" class="imp">
+                            </div>
+                       </div>
+                       <div class="carry-out">
+                            <div class="field">
+                                <span>Місто *</span>
+                                <input type="text" name="carry-out-city" placeholder="Наприклад: Чернівці" class="imp">
+                            </div>
+                            <div class="field">
+                                <span>Видеріть потрібну аптеку *</span>
+                                <input type="text" name="carry-out-depart" class="imp">
+                            </div>
+                       </div>
+                    </section>
+
+                    <input type="submit" value="Підтвердити замовлення" onclick="return checkform()">
                 </form>
-            </section>
-            <section class="category-body">
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <a href="./item.html"><article class="product__item">
-                    <img src="../images/product-img.PNG" alt="">
-                    <p>тестова назва потрібного нам продукту, приклад назви</p>
-                    <span>Від 000,00грн</span>
-                </article></a>
-                <i aria-hidden="true"></i>
-                <i aria-hidden="true"></i>
-                <i aria-hidden="true"></i>
-            </section>
-        </section>
-       
+            </div>
+        </article>
+        <article class="no-orders">
+            <p>У вашій корзині немає товарів</p>
+            <a href="../index.html" class="continue-orders">Продовжити покупки</a>
+        </article>
     </main>
 
     <footer>
@@ -257,5 +335,5 @@
     </footer>
 </body>
 <script src="../index.js"></script>
-<script src="../js/categories-script.js"></script>
+<script src="../js/basket.js"></script>
 </html>

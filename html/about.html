@@ -19,19 +19,26 @@
                         (063) 228-47-84
                     </li>
                     <li class="main-nav__item">
-                        <a href="">оплата і доставка</a>
+                        <a href="./delivery.html">оплата і доставка</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">аптеки</a>
+                        <a href="./stores-map.html">аптеки</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">про нас</a>
+                        <a href="./about.html" class="active-link">про нас</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">особистий кабінет</a>
+                        <a href="./auth.html">особистий кабінет</a>
                     </li>
                     <li class="main-nav__item" style="border: none;">
-                        <a href="">мова</a>
+                        <div class="lang-dropdown">
+                            <button onclick="myFunction()" class="lang-dropbtn">мова</button>
+                            <div id="lang-myDropdown" class="lang-dropdown-content">
+                              <a href="#">Ukr</a>
+                              <a href="#">Rus</a>
+                              <a href="#">Eng</a>
+                            </div>
+                          </div>
                     </li>
                 </ul>
             </section>
@@ -42,7 +49,7 @@
                     </a>
                 </div>
                 <div class="search">
-                    <form action="" class="main-header__search">
+                    <form action="./search.html" class="main-header__search">
                         <input type="text" name="search-value" id="search-value" placeholder="Назва, виробник ...">
                         <input type="submit" value="Пошук" id="search-sbm">
                     </form>
@@ -51,7 +58,7 @@
                     <div class="basket">
                         <img src="../images/basket.PNG" alt="Кошик">
                         <div class="basket-info">
-                            <a href="">КОШИК</a>
+                            <a href="./basket.html">КОШИК</a>
                             <span>пусто</span>
                         </div>
                     </div>
